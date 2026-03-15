@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petros Markopoulos</title>
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --text: #1f1f1f;
+      --panel: #ffffff;
+      --accent: #1b4d8b;
+      --border: #e5e5e5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+    }
+
+    .left,
+    .right {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    h1,
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .profile-image {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 1rem auto 1.25rem;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    .about-section p {
+      text-align: justify;
+    }
+
+    .hobbies-section p {
+      text-align: justify;
+    }
+
+    .updates-list {
+      list-style: none;
+      padding-left: 1rem;
+      margin: 0;
+    }
+
+    .update-date {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: 0 auto 2rem;
+      padding: 0 1.25rem;
+      color: #666666;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-image {
+        max-width: 70%;
+      }
+
+      .links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="left">
+      <h1>Petros Markopoulos</h1>
+      <img src="petros_mugshot.jpg" alt="Portrait of Petros Markopoulos" class="profile-image" />
+      <nav class="links" aria-label="Profile links">
+        <a href="mailto:pmarkopoulos@ucsd.edu">Email me!</a>
+        <a href="https://github.com/petros-marko">Check out my github!</a>
+        <a href="https://linkedin.com/in/petros-markopoulos-43807716b/">I'm on LinkedIn too</a>
+      </nav>
+    </section>
+
+    <section class="right">
+      <section class="section about-section">
+        <h2>About me</h2>
+        <p>I'm a first year Ph.D. student at UCSD working with <a href="https://ranjitjhala.github.io">Ranjit Jhala</a>. In my current project I'm extending <a href="https://github.com/flux-rs/flux">Flux</a> with the capability to emit verification conditions in Lean so that users can interactively prove them when automatic verification fails. I'm broadly interested in type systems and formal verification.</p>
+        <p>Before coming to UCSD I was a software engineer in San Francisco working for Asana Inc, and before that I did my undergrad at Williams College, majoring in Computer Science and Mathematics.</p>
+      </section>
+      <section class="section">
+        <h2>Publications</h2>
+        <p>Coming...</p>
+      </section>
+      <section class="section">
+        <h2>Updates</h2>
+        <ul class="updates-list">
+          <li><span class="update-date">September 2025:</span> Started my Ph.D. at UCSD</li>
+        </ul>
+      </section>
+      <section class="section hobbies-section">
+        <h2>Hobbies</h2>
+        <p>What's the point of being in San Diego if you're not going to enjoy the weather? I've started playing beach volleyball, pickleball, and tennis, but the real goal is to become a surfer.</p>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Petros Markopoulos</p>
+  </footer>
+</body>
+</html>
