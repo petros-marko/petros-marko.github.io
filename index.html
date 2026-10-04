@@ -98,6 +98,16 @@
       color: var(--accent);
     }
 
+    .projects-list {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin: 0;
+    }
+
+    .projects-list li::marker {
+      color: var(--accent);
+    }
+
     .update-date {
       font-weight: 700;
       color: var(--accent);
@@ -180,8 +190,13 @@
     <section class="right">
       <section class="section about-section">
         <h2>About me</h2>
-        <p>I'm a first year Ph.D. student at UCSD working with <a href="https://ranjitjhala.github.io">Ranjit Jhala</a>. In my current project I'm extending <a href="https://github.com/flux-rs/flux">Flux</a> with the capability to emit verification conditions in Lean so that users can interactively prove them when automatic verification fails. I'm broadly interested in type systems and formal verification.</p>
-        <p>Before coming to UCSD I was a software engineer in San Francisco working for Asana Inc, and before that I did my undergrad at Williams College, majoring in Computer Science and Mathematics.</p>
+        <p>I'm a second year Ph.D. student at UCSD working with <a href="https://ranjitjhala.github.io">Ranjit Jhala</a>. I'm broadly interested in type systems and formal verification. Some stuff I'm working on:</p>
+        <ul class="projects-list">
+          <li>Tinkering with a liquid-type system in Lean as a means of proof automation</li>
+          <li>Continuing to work on <a href="https://github.com/LeanHorn/Flex">Flex</a> together with the <a href="https://github.com/flux-rs/flux">Flux</a> extension for emitting constraints in Lean to enable interactive proving where automation fails</li>
+          <li>Still hacking on <a href="https://github.com/siddhartha-gadgil/PastaLean">PastaLean</a> from my summer internship: a system to translate Python into Lean to enable verification</li>
+        </ul>
+        <p>Before coming to UCSD, I was a software engineer in San Francisco working for Asana Inc, and before that I did my undergrad at Williams College, majoring in Computer Science and Mathematics.</p>
       </section>
       <section class="section">
         <h2>Publications</h2>
@@ -201,13 +216,14 @@
       <section class="section">
         <h2>Updates</h2>
         <ul class="updates-list">
+          <li><span class="update-date">September 2026:</span> Internship done, back in San Diego</li>
           <li><span class="update-date">June 2026:</span> Started internship at Emergence AI</li>
           <li><span class="update-date">September 2025:</span> Started my Ph.D. at UCSD</li>
         </ul>
       </section>
       <section class="section hobbies-section">
         <h2>Hobbies</h2>
-        <p>What's the point of being in San Diego if you're not going to enjoy the weather? I've started playing beach volleyball, pickleball, and tennis, but the real goal is to become a surfer.</p>
+        <p>What's the point of being in San Diego if you're not going to enjoy the weather? I've started playing beach volleyball, pickleball, and tennis. I finally started surfing over the summer of 2026 and it's awesome.</p>
       </section>
     </section>
   </main>
